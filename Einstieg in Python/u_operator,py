@@ -1,0 +1,31 @@
+mi = 0.26
+mj = 0.22
+mk = 0.18
+a = 4000
+
+print("Bitte geben Sie Ihr Bruttogehalt in Euro an:")
+z = input()
+zahl = float(z)
+
+print("Bitte geben Sie Ihren Familienstand an:")
+y = input()
+
+if zahl > a and y == "ledig":
+    print("Ihr Steuersatz beträgt ", mi*100, "Prozent")
+    print("Ihr Steuerbetrag beträgt ", mi*zahl, "Euro")
+    print("Ihr Nettogehalt beträgt ", zahl-(mi*zahl), "Euro")
+
+if zahl > a and y == "verheiratet":
+    print("Ihr Steuersatz beträgt ", mj*100, "Prozent")
+    print("Ihr Steuerbetrag beträgt ", mj*zahl, "Euro")
+    print("Ihr Nettogehalt beträgt ", zahl-(mj*zahl), "Euro")
+
+if zahl <= a and y == "ledig":
+    print("Ihr Steuersatz beträgt ", mj*100, "Prozent")
+    print("Ihr Steuerbetrag beträgt ", mj*zahl, "Euro")
+    print("Ihr Nettogehalt beträgt ", zahl-(mj*zahl), "Euro")
+
+if zahl <= a and y == "verheiratet":
+    print("Ihr Steuersatz beträgt ", mk*100, "Prozent")
+    print("Ihr Steuerbetrag beträgt ", mk*zahl, "Euro")
+    print("Ihr Nettogehalt beträgt ", zahl-(mk*zahl), "Euro")
