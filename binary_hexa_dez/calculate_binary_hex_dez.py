@@ -11,8 +11,7 @@ type = int(type)
 
 #bin-hex
 if type == 1:
-    print("Enter a binary number:")
-    bin_num = input()
+    bin_num = input("Enter a binary number:")
     bin_num = int(bin_num, 2)
     hex_num = hex(bin_num)
     hex_num = hex_num.lower().lstrip("0x")
@@ -20,45 +19,40 @@ if type == 1:
 
 #hex-bin
 elif type == 2:
-    print("Enter a hexadecimal number:")
-    hex_num = input()
+    hex_num = input("Enter a hexadecimal number:")
     hex_num = int(hex_num, 16)
     bin_num = bin(hex_num)
     bin_num = bin_num.lower().lstrip("0b")
     print(bin_num)
 
-#dez-bin
+#dec-bin
 elif type == 3:
-    print("Enter a hexadecimal number:")
-    dez_num = input()
-    dez_num = int(dez_num)
-    bin_num = bin(dez_num)
+    dec_num = input("Enter a decimal number:")
+    dec_num = int(dec_num)
+    bin_num = bin(dec_num)
     bin_num = bin_num.lower().lstrip("0b")
     print(bin_num)
-#bin-dez
+#bin-dec
 elif type == 4:
-    print("Enter a binary number:")
-    bin_num = input()
+    bin_num = input("Enter a binary number:")
     bin_num = int(bin_num, 2)
-    dez_num = int(bin_num)
-    print(dez_num)
+    dec_num = int(bin_num)
+    print(dec_num)
 
-#dez-hex
+#dec-hex
 elif type == 5:
-    print("Enter a hexadecimal number:")
-    dez_num = input()
-    dez_num = int(dez_num)
-    hex_num = hex(dez_num)
+    dec_num = input("Enter a decimal number:")
+    dec_num = int(dec_num)
+    hex_num = hex(dec_num)
     hex_num = hex_num.lower().lstrip("0x")
     print(hex_num)
 
-#hex-dez
+#hex-dec
 elif type == 6:
-    print("Enter a binary number:")
-    hex_num = input()
+    hex_num = input("Enter a hexadecimal number:")
     hex_num = int(hex_num, 16)
-    dez_num = int(hex_num)
-    print(dez_num)
+    dec_num = int(hex_num)
+    print(dec_num)
 
 else:
     print("Invalid input!")

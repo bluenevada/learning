@@ -1,11 +1,11 @@
 import random
 
-dez_num = random.randint(0,1000)
+dec_num = random.randint(0,1000)
 
-bin_num = bin(dez_num)
+bin_num = bin(dec_num)
 bin_num = bin_num.lower().lstrip("0b")
 
-hex_num = hex(dez_num)
+hex_num = hex(dec_num)
 hex_num = hex_num.lower().lstrip("0x")
 
 print("What do you want to learn?")
@@ -45,7 +45,7 @@ elif type == 2:
 
 #dez-bin
 elif type == 3:
-    print(dez_num)
+    print(dec_num)
     print("Enter the number in bin:")
     answer = input()
 
@@ -61,7 +61,7 @@ elif type == 4:
     print("Enter the number in dez:")
     answer = input()
 
-    while answer != dez_num:
+    while answer != dec_num:
         print("Wrong answer! Try again:")
         answer = input()
 
@@ -69,7 +69,7 @@ elif type == 4:
 
 #dez-hex
 elif type == 5:
-    print(dez_num)
+    print(dec_num)
     print("Enter the number in hex:")
     answer = input()
 
@@ -85,7 +85,7 @@ elif type == 6:
     print("Enter the number in dez:")
     answer = input()
 
-    while answer != dez_num:
+    while answer != dec_num:
         print("Wrong answer! Try again:")
         answer = input()
 
